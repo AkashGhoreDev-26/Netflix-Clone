@@ -80,7 +80,6 @@ window.openMovieModal = function(cardElement) {
     if (modalGenre) modalGenre.textContent = genre;
     if (modalDescription) modalDescription.textContent = desc;
 
-    // Load full-sized banner image
     if (modalBanner && image) {
       modalBanner.style.backgroundImage = `url('${image}')`;
     }

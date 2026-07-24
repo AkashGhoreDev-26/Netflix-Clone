@@ -3,13 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="ASSECTS/Netflix India – Watch TV Shows Online, Watch Movies Online_files/Netflix N.png" />
+  <link rel="icon" type="image/png" href="ASSECTS/logo.png" />
   <link rel="stylesheet" href="CSS/index.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-
-  <!-- Browser Tab Favicon Icon -->
-  <link rel="icon" type="image/png" href="ASSECTS/logo.png" />
-  
   <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
 </head>
 <body>
@@ -28,7 +24,7 @@
     <div class="hero-overlay">
       <nav class="navigation-bar">
         <div class="brand-logo">
-          <img src="ASSECTS/Netflix India – Watch Shows Online, Watch Movies Online_files/Netflix_Logo_PMS.png" alt="Netflix Premium Logo" />
+          <img src="ASSECTS/Netflix India – Watch TV Shows Online, Watch Movies Online_files/Netflix_Logo_PMS.png" alt="Netflix Premium Logo" />
         </div>
         <div class="navigation-controls">
           <div class="language-selector">
@@ -46,7 +42,7 @@
           
           <form class="lead-generation-form" onsubmit="localStorage.setItem('userSignupEmail', this.querySelector('.hero-email-input').value); window.location.href='signin.html'; return false;">
             <input type="email" class="hero-email-input" placeholder="Email address" required />
-            <button type="submit">Try 30 Days for ₹0 <i class="fa-solid fa-chevron-right"></i></button>
+            <button type="submit" class="cta-button">Try 30 Days for ₹0 <i class="fa-solid fa-chevron-right"></i></button>
           </form>
           <p class="sub-cta-note">New members only. Terms apply.</p>
         </div>
@@ -81,15 +77,15 @@
         <!-- Card 2 -->
         <div class="movie-card" 
              onclick="openMovieModal(this)"
-             data-title="Raid 2" 
+             data-title="IKKA" 
              data-image="ASSECTS/2. IKKA.webp" 
-             data-year="2025" 
-             data-rating="A" 
+             data-year="2026" 
+             data-rating="U/A 16+" 
              data-type="Movie" 
-             data-genre="Action / Thriller" 
-             data-desc="High-octane action and suspense follow an intense enforcement tracking system inside dangerous territories.">
+             data-genre="Thrillers / Dramas" 
+             data-desc="With a loved one's life at stake, a celebrated lawyer must defend a man he suspects is guilty — battling his conscience every step of the way.">
           <span class="rank-number">2</span>
-          <div class="poster-housing"><img src="ASSECTS/2. IKKA.webp" alt="Raid 2 Poster" /></div>
+          <div class="poster-housing"><img src="ASSECTS/2. IKKA.webp" alt="Ikka Poster" /></div>
         </div>
         
         <!-- Card 3 -->
@@ -133,76 +129,6 @@
           <span class="rank-number">5</span>
           <div class="poster-housing"><img src="ASSECTS/5. BLAST.webp" alt="HIT 3rd Case Poster" /></div>
         </div>
-        
-        <!-- Card 6 -->
-        <div class="movie-card" 
-             onclick="openMovieModal(this)"
-             data-title="That Life" 
-             data-image="ASSECTS/6. TEACH YOU A LESSION.webp" 
-             data-year="2024" 
-             data-rating="U/A 16+" 
-             data-type="Show" 
-             data-genre="Drama / Slice of Life" 
-             data-desc="A gritty look into corporate ladder dynamics, modern friendships, and the compromises needed to survive the concrete metropolis.">
-          <span class="rank-number">6</span>
-          <div class="poster-housing"><img src="ASSECTS/6. TEACH YOU A LESSION.webp" alt="That Life Poster" /></div>
-        </div>
-        
-        <!-- Card 7 -->
-        <div class="movie-card" 
-             onclick="openMovieModal(this)"
-             data-title="JAAT" 
-             data-image="ASSECTS/7. AVATAR THE LAST AIRBENDER.webp" 
-             data-year="2025" 
-             data-rating="U/A 16+" 
-             data-type="Movie" 
-             data-genre="Action / Cult Classic" 
-             data-desc="A legendary rural enforcer stands up to protect his ancestral village lands from an opportunistic syndicate system.">
-          <span class="rank-number">7</span>
-          <div class="poster-housing"><img src="ASSECTS/7. AVATAR THE LAST AIRBENDER.webp" alt="JAAT Poster" /></div>
-        </div>
-        
-        <!-- Card 8 -->
-        <div class="movie-card" 
-             onclick="openMovieModal(this)"
-             data-title="Chhaava" 
-             data-image="ASSECTS/8. DESIRE.webp" 
-             data-year="2025" 
-             data-rating="U/A 16+" 
-             data-type="Movie" 
-             data-genre="Historical Epic / Action" 
-             data-desc="The epic biographical saga of courage, strategy, and unyielding honor charting Chhatrapati Sambhaji Maharaj's legendary battlefield victories.">
-          <span class="rank-number">8</span>
-          <div class="poster-housing"><img src="ASSECTS/8. DESIRE.webp" alt="Chhaava Poster" /></div>
-        </div>
-
-        <!-- Card 9 -->
-        <div class="movie-card" 
-             onclick="openMovieModal(this)"
-             data-title="Pati Patni Aur Woh 2" 
-             data-image="ASSECTS/9. PATI PATNI AUR WO DO.webp" 
-             data-year="2025" 
-             data-rating="U/A 16+" 
-             data-type="Movie" 
-             data-genre="Comedy / Romance" 
-             data-desc="A hilarious look at modern relationships and misunderstandings.">
-          <span class="rank-number">9</span>
-          <div class="poster-housing"><img src="ASSECTS/9. PATI PATNI AUR WO DO.webp" alt="Pati Patni Poster" /></div>
-        </div>
-
-        <!-- Card 10 -->
-        <div class="movie-card" 
-             onclick="openMovieModal(this)"
-             data-title="DHURANDHAR" 
-             data-image="ASSECTS/10. DHURANDHAR.webp" 
-             data-year="2025" 
-             data-rating="U/A 16+" 
-             data-type="Movie" 
-             data-genre="Historical Epic / Action" 
-             data-desc="An epic saga of courage, strategy, and unyielding honor.">
-          <span class="rank-number">10</span>
-          <div class="poster-housing"><img src="ASSECTS/10. DHURANDHAR.webp" alt="Dhurandhar Poster" /></div>
-        </div>
       </div>
 
       <button class="carousel-control control-right" aria-label="Scroll Right">&#10095;</button>
@@ -236,7 +162,7 @@
     </div>
   </section>
 
-  <!-- ALL 6 FAQS RESTORED -->
+  <!-- FAQS -->
   <section class="faq-container">
     <h2 class="section-heading text-center">Frequently Asked Questions</h2>
 
@@ -246,8 +172,7 @@
           <span>What is Netflix?</span> <i class="fa-solid fa-plus structural-icon"></i>
         </button>
         <div class="accordion-panel">
-          <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</p>
-          <p>You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+          <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more.</p>
         </div>
       </div>
       <div class="accordion-item">
@@ -255,8 +180,7 @@
           <span>How much does Netflix cost?</span> <i class="fa-solid fa-plus structural-icon"></i>
         </button>
         <div class="accordion-panel">
-          <p>New members can try 30 days of Netflix for ₹0. After the free trial ends, your plan will automatically renew at the regular price depending on the plan you select. Plans range from ₹149 to ₹649.</p>
-          <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop or streaming device. No extra costs, cancel at anytime.</p>
+          <p>Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.</p>
         </div>
       </div>
       <div class="accordion-item">
@@ -264,8 +188,7 @@
           <span>Where can I watch?</span> <i class="fa-solid fa-plus structural-icon"></i>
         </button>
         <div class="accordion-panel">
-          <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
-          <p>You can also download your favourite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+          <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com.</p>
         </div>
       </div>
       <div class="accordion-item">
@@ -273,7 +196,7 @@
           <span>How do I cancel?</span> <i class="fa-solid fa-plus structural-icon"></i>
         </button>
         <div class="accordion-panel">
-          <p>Netflix is flexible. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+          <p>Netflix is flexible. You can easily cancel your account online in two clicks.</p>
         </div>
       </div>
       <div class="accordion-item">
@@ -281,7 +204,7 @@
           <span>What can I watch on Netflix?</span> <i class="fa-solid fa-plus structural-icon"></i>
         </button>
         <div class="accordion-panel">
-          <p>Netflix has an extensive library of feature films, documentaries, shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+          <p>Netflix has an extensive library of feature films, documentaries, shows, anime, and more.</p>
         </div>
       </div>
       <div class="accordion-item">
@@ -289,8 +212,7 @@
           <span>Is Netflix good for kids?</span> <i class="fa-solid fa-plus structural-icon"></i>
         </button>
         <div class="accordion-panel">
-          <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.</p>
-          <p>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+          <p>The Netflix Kids experience is included in your membership to give parents control.</p>
         </div>
       </div>
     </div>
@@ -298,8 +220,8 @@
     <h2 class="cta-banner-text">Ready to watch? Enter your email to create or restart your membership.</h2>
 
     <form class="lead-generation-form bottom-form" onsubmit="localStorage.setItem('userSignupEmail', this.querySelector('.bottom-email-input').value); window.location.href='signin.html'; return false;">
-      <input type="email" class="bottom-email-input" placeholder="Email address" required />
-      <button type="submit">Try 30 Days for ₹0 <i class="fa-solid fa-chevron-right"></i></button>
+      <input type="email" class="bottom-email-input hero-email-input" placeholder="Email address" required />
+      <button type="submit" class="cta-button">Try 30 Days for ₹0 <i class="fa-solid fa-chevron-right"></i></button>
     </form>
 
     <footer class="application-footer">
@@ -346,7 +268,9 @@
     <div class="modal-content-wrapper">
       <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Details">&times;</button>
       
-      <div class="modal-hero-banner" id="modalBanner"></div>
+      <div class="modal-hero-banner" id="modalBanner">
+        <div class="modal-banner-gradient-overlay"></div>
+      </div>
       
       <div class="modal-body-details">
         <h2 class="modal-movie-title" id="modalTitle"></h2>
@@ -361,6 +285,7 @@
         <p class="modal-description" id="modalDescription"></p>
         
         <button class="modal-cta-btn" onclick="window.location.href='signin.html'">Try 30 Days for ₹0 <i class="fa-solid fa-chevron-right"></i></button>
+        <p class="modal-sub-note">New members only. Terms below.</p>
       </div>
     </div>
   </div>

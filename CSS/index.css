@@ -327,8 +327,8 @@ img {
    ========================================================================== */
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
   width: 90%;
   max-width: 1200px;
   margin: 5px auto;
@@ -341,6 +341,8 @@ img {
   border-radius: 14px;
   padding: 24px;
   min-height: 220px;
+  display: flex;
+  flex-direction: column;
 }
 
 .feature-card h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 8px; }
@@ -402,7 +404,7 @@ img {
 .footer-contact a { color: #cbd5e1; font-size: 0.95rem; text-decoration: none; }
 .footer-links-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   margin: 25px 0;
 }
@@ -410,7 +412,7 @@ img {
 .footer-column a { color: #cbd5e1; font-size: 0.85rem; text-decoration: none; }
 
 /* ==========================================================================
-   FULL-POSTER MODAL VIEWPORT OVERLAY (MATCHES FRAME.JPG)
+   FULL-POSTER MODAL VIEWPORT OVERLAY
    ========================================================================== */
 .movie-detail-modal {
   position: fixed;
@@ -452,7 +454,6 @@ img {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
 }
 
-/* Full Poster Image Aspect and Gradient Overlay */
 .modal-hero-banner {
   width: 100%;
   height: 380px;
@@ -551,10 +552,20 @@ img {
 }
 
 /* ==========================================================================
-   EXPLICIT RESPONSIVE BREAKPOINTS (MOBILE FIX)
+   EXPLICIT RESPONSIVE BREAKPOINTS
    ========================================================================== */
+@media (max-width: 768px) {
+  /* Feature boxes stack vertically into 1 column on tablet and mobile screens */
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 600px) {
-  /* Fix 1: Form buttons stack vertically and stretch full width on mobile */
   .lead-generation-form {
     flex-direction: column;
     gap: 12px;
@@ -569,20 +580,14 @@ img {
   }
 
   .footer-links-grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
   }
   
   .carousel-control {
-    display: none; /* Swipe gesture native on touch devices */
+    display: none;
   }
 
   .modal-hero-banner {
     height: 300px;
-  }
-}
-
-@media (min-width: 768px) {
-  .footer-links-grid {
-    grid-template-columns: repeat(4, 1fr);
   }
 }
